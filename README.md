@@ -1,3 +1,8 @@
+This is a sample application created by following the Udemy course.
+https://www.udemy.com/course/reactjs-certification-for-freshers/
+
+You need to create your own API key on news server and provide it in the config.js in order to make this application work
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

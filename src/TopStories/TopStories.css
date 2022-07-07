@@ -1,12 +1,12 @@
-.top-stories-container{
+.top-stories-container {
 }
 
-.stories{
+.stories {
     width: 65%;
     float: left;
 }
 
-.side-bar{
+.side-bar {
     width: 35%;
     float: right;
     padding: 20px;

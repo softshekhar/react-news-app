@@ -6,7 +6,7 @@ import {NavLink} from 'react-router-dom';
 class NavigationBar extends React.Component {
 
     render() {
-        return(
+        return (
             <div className="navbar-conatiner">
                 <NavLink to={'/topstories'} className="nav-link">
                     <i className="fa fa-globe"></i> Top Stories

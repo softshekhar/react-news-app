@@ -1,13 +1,13 @@
 import React from 'react';
 
 class NoMatch extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
     }
 
-    render(){
-        return(
-        <div>Path doesn't exist in our application</div>
+    render() {
+        return (
+            <div>Path doesn't exist in our application</div>
         );
     }
 }

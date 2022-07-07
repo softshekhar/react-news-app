@@ -15,7 +15,7 @@ class TopStories extends React.Component {
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.setState({
             isDataLoading: true
         });
@@ -32,21 +32,21 @@ class TopStories extends React.Component {
         });
     }
 
-    render(){
+    render() {
         return (
             <div className="top-stories-container">
                 <div className="stories">
                     <h3>Headlines</h3>
                     {
-                        this.state.isDataLoading ? 
-                        (<div>News is loading....</div>) :
-                        (this.state.news.map((item) => {
-                            return <NewsCard key={item["url"]} data={item} />
-                        }))
+                        this.state.isDataLoading ?
+                            (<div>News is loading....</div>) :
+                            (this.state.news.map((item) => {
+                                return <NewsCard key={item["url"]} data={item}/>
+                            }))
                     }
                 </div>
                 <div className="side-bar">
-                    <FactCheck />
+                    <FactCheck/>
                 </div>
             </div>
         );

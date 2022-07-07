@@ -1,4 +1,4 @@
-.navbar-conatiner{
+.navbar-conatiner {
     width: 280px;
     padding-top: 20px;
     float: left;
@@ -6,7 +6,7 @@
     position: fixed;
 }
 
-.nav-link{
+.nav-link {
     font-size: 14px;
     color: black;
     text-decoration: none;
@@ -17,7 +17,7 @@
 }
 
 .nav-link.active {
-    background-color: rgba(2,162,206, 0.25);
+    background-color: rgba(2, 162, 206, 0.25);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     color: rgb(2, 162, 206);

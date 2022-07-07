@@ -12,7 +12,7 @@ class FactCheck extends React.Component {
         };
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.setState({
             isDataLoading: true
         });
@@ -29,21 +29,21 @@ class FactCheck extends React.Component {
         });
     }
 
-    render(){
+    render() {
         return (
             <div className="fact-container">
                 <h4>Sunday Review</h4>
                 {
-                    this.state.isDataLoading ? 
-                    (<div>News is loading....</div>) :
-                    this.state.news.map((data, index) => {
-                        return (
-                            <a href={data["url"]} target="blank" key={index} className="fact-link">
-                                <div className="fact-title">{data["title"]}</div>
-                                <div className="fact-source">{data["byline"]}</div>
-                            </a>
-                        );
-                    })
+                    this.state.isDataLoading ?
+                        (<div>News is loading....</div>) :
+                        this.state.news.map((data, index) => {
+                            return (
+                                <a href={data["url"]} target="blank" key={index} className="fact-link">
+                                    <div className="fact-title">{data["title"]}</div>
+                                    <div className="fact-source">{data["byline"]}</div>
+                                </a>
+                            );
+                        })
                 }
             </div>
         );

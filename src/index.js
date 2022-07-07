@@ -9,29 +9,29 @@ import NavigationBar from './NavigationBar/NavigationBar';
 import TopStories from './TopStories/TopStories';
 import TopicBasedNews from './TopicBasedNews/TopicBasedNews';
 
-import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <div className="news-app-container">
-        <Header />
-        <div className="news-container">
-          <NavigationBar />
-          <div className="news-section">
-            <Switch>
-              <Route path="/topstories" component={TopStories} />
-              <Route path="/topics/:name" component={TopicBasedNews} />
-              <Route path="*">
-                <Redirect to={'/topstories'} />
-              </Route>
-            </Switch>
-          </div>
-        </div>
-      </div>
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <BrowserRouter>
+            <div className="news-app-container">
+                <Header/>
+                <div className="news-container">
+                    <NavigationBar/>
+                    <div className="news-section">
+                        <Switch>
+                            <Route path="/topstories" component={TopStories}/>
+                            <Route path="/topics/:name" component={TopicBasedNews}/>
+                            <Route path="*">
+                                <Redirect to={'/topstories'}/>
+                            </Route>
+                        </Switch>
+                    </div>
+                </div>
+            </div>
+        </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
