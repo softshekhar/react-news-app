@@ -1,0 +1,29 @@
+.navbar-conatiner{
+    width: 280px;
+    padding-top: 20px;
+    float: left;
+    padding-right: 20px;
+    position: fixed;
+}
+
+.nav-link{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-link.active {
+    background-color: rgba(2,162,206, 0.25);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: rgb(2, 162, 206);
+}
+
+.nav-link > .fa {
+    font-size: 18px;
+    margin: 0 20px;
+}

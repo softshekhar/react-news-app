@@ -1,0 +1,13 @@
+.top-stories-container{
+}
+
+.stories{
+    width: 65%;
+    float: left;
+}
+
+.side-bar{
+    width: 35%;
+    float: right;
+    padding: 20px;
+}

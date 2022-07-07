@@ -1,0 +1,33 @@
+.fact-container {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+h4 {
+    margin-top: 0 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 15px;
+    font-weight: normal;
+}
+
+.fact-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.fact-title {
+    font-weight: bold;
+}
+
+.fact-link:hover > .fact-title {
+    text-decoration: underline;
+}
+
+.fact-source {
+    line-height: 2;
+    font-size: 12px;
+}
